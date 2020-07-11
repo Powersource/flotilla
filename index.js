@@ -14,7 +14,9 @@ const plugins = [
   require("ssb-backlinks"),
   // Required by ssb-room
   require("ssb-conn"),
-  // Required to be before ssb-peer-invites
+  // Required by ssb-device-address
+  require("ssb-query"),
+  // Required by ssb-peer-invites
   require("ssb-friends"),
   shuffle([
     require("ssb-about"),
@@ -27,7 +29,6 @@ const plugins = [
     require("ssb-onion"),
     require("ssb-ooo"),
     require("ssb-plugins"),
-    require("ssb-query"),
     require("ssb-room/tunnel/client"),
     require("ssb-search"),
     require("ssb-tangle"),

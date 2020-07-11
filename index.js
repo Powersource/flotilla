@@ -35,11 +35,12 @@ const plugins = [
     require("ssb-unix-socket"),
     require("ssb-ws"),
     require("ssb-meme"),
-    // These two are required by ssb-peer-invites
-    require("ssb-device-address"),
-    require("ssb-identities"),
-    require("ssb-peer-invites"),
   ]),
+  // These two are required by ssb-peer-invites
+  require("ssb-device-address"),
+  require("ssb-identities"),
+  // doesn't really seem to help to put this at the end
+  require("ssb-peer-invites"),
 ];
 
 module.exports = (config) => {

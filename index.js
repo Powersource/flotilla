@@ -14,11 +14,12 @@ const plugins = [
   require("ssb-backlinks"),
   // Required by ssb-room
   require("ssb-conn"),
+  // Required to be before ssb-peer-invites
+  require("ssb-friends"),
   shuffle([
     require("ssb-about"),
     require("ssb-blobs"),
     require("ssb-ebt"),
-    require("ssb-friends"),
     require("ssb-invite"),
     require("ssb-lan"),
     require("ssb-logging"),
